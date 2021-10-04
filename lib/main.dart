@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'screens/large_file_main.dart';
+import 'widgets/bot_nav.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +18,13 @@ class MyApp extends StatelessWidget {
         
         primarySwatch: Colors.blue,
       ),
-      home: LargeFileMain()
+      home: Scaffold(
+        appBar: AppBar(
+          title: const Text('App2'),
+        ),
+        body: LargeFileMain(),
+        // bottomNavigationBar: BotNav(),
+      )
     );
   }
 }

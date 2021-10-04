@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'dart:io';
 import 'package:dio/dio.dart';
 import 'package:path_provider/path_provider.dart';
+import 'package:prac_app2/widgets/bot_nav.dart';
 
 class LargeFileMain extends StatefulWidget {
   LargeFileMain({Key? key}) : super(key: key);
@@ -39,10 +40,10 @@ class _LargeFileMainState extends State<LargeFileMain> {
           style: const TextStyle(color: Colors.white),
           keyboardType: TextInputType.text,
           decoration: InputDecoration(hintText: 'url을 입력하세요',
-            prefixIcon: Icon(Icons.email),
+            prefixIcon: const Icon(Icons.email),
             // fillColor: Colors.red,
             focusedBorder: OutlineInputBorder(
-              borderSide: BorderSide(
+              borderSide: const BorderSide(
                 width: 5,
                 color: Colors.green),
               borderRadius: BorderRadius.circular(10),
@@ -105,6 +106,7 @@ class _LargeFileMainState extends State<LargeFileMain> {
         },
         child: const Icon(Icons.file_download),
       ),
+      
     );
   }
 
